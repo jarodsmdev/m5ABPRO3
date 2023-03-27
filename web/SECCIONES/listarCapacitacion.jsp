@@ -4,6 +4,7 @@
     Author     : Mauricio
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,7 +19,10 @@
         </nav>
 
         <main>
-            <h1 class="text-center py-3">Listar Capacitaciones</h1>
+            <h1 class="text-center py-3 my-5">Listar Capacitaciones</h1>
+            
+            
+            
             
             <table class="table table-sm table-hover">
                 <thead>
@@ -33,23 +37,18 @@
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <th>1</th>
-                        <td>123-1</td>
-                        <td>Lunes</td>
-                        <td>14:00</td>
-                        <td>40</td>
-                        <td>25</td>
-                    </tr>
-
-                    <tr>
-                        <th>2</th>
-                        <td>456-3</td>
-                        <td>Miércoles</td>
-                        <td>16:00</td>
-                        <td>20</td>
-                        <td>10</td>
-                    </tr>
+                    <c:forEach var="i" begin="1" end="10">
+                        
+                        <tr>
+                            <th>${i}</th>
+                            <td>123-${i}</td>
+                            <td>Lunes</td>
+                            <td>14:00</td>
+                            <td>40</td>
+                            <td>25</td>
+                        </tr>
+                
+                    </c:forEach>
                 </tbody>
             </table>
         </main>
