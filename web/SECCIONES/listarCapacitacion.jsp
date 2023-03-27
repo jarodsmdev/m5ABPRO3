@@ -4,13 +4,14 @@
     Author     : Mauricio
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <title>JSP Page</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <title>Capacitaciones</title>
     </head>
     <body class="container">
         <nav>
@@ -18,7 +19,10 @@
         </nav>
 
         <main>
-            <h1 class="text-center py-3">Listar Capacitaciones</h1>
+            <h1 class="text-center py-3 my-5">Listar Capacitaciones</h1>
+            
+            
+            
             
             <table class="table table-sm table-hover">
                 <thead>
@@ -33,23 +37,18 @@
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <th>1</th>
-                        <td>123-1</td>
-                        <td>Lunes</td>
-                        <td>14:00</td>
-                        <td>40</td>
-                        <td>25</td>
-                    </tr>
-
-                    <tr>
-                        <th>2</th>
-                        <td>456-3</td>
-                        <td>Miércoles</td>
-                        <td>16:00</td>
-                        <td>20</td>
-                        <td>10</td>
-                    </tr>
+                    <c:forEach var="i" begin="1" end="10">
+                        
+                        <tr>
+                            <th>${i}</th>
+                            <td>123-${i}</td>
+                            <td>Lunes</td>
+                            <td>14:00</td>
+                            <td>40</td>
+                            <td>25</td>
+                        </tr>
+                
+                    </c:forEach>
                 </tbody>
             </table>
         </main>

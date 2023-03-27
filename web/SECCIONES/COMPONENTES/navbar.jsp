@@ -15,7 +15,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="${pageContext.request.contextPath}/SvInicio">Inicio</a>
+                <a class="nav-link ${pageContext.request.requestURI.endsWith('/') ? 'active' : ''}" aria-current="page" href="${pageContext.request.contextPath}/SvInicio">Inicio</a>
           </li>
           <li class="nav-item">
                 <a class="nav-link" href="${pageContext.request.contextPath}/SvContacto">Contacto</a>
