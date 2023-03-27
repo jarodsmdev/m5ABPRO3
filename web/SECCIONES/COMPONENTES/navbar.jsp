@@ -35,7 +35,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Configuración</a></li>
-                  <li><a class="dropdown-item" href="${pageContext.request.contextPath}/SvLogin">Cerrar Sesión</a></li>
+                  <li><a class="dropdown-item" href="${pageContext.request.contextPath}/SvLogout">Cerrar Sesión</a></li>
                 </ul>
               </li>
 

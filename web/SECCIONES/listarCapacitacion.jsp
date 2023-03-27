@@ -4,6 +4,7 @@
     Author     : Mauricio
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -11,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
-        <title>JSP Page</title>
+        <title>Lista Capacitacion</title>
     </head>
     <body class="container">
         <nav>
@@ -34,23 +35,16 @@
                 </thead>
 
                 <tbody>
+                    <c:forEach begin="1" end="20" var="var">
                     <tr>
-                        <th>1</th>
+                        <th>${var}</th>
                         <td>123-1</td>
                         <td>Lunes</td>
                         <td>14:00</td>
                         <td>40</td>
                         <td>25</td>
                     </tr>
-
-                    <tr>
-                        <th>2</th>
-                        <td>456-3</td>
-                        <td>Miércoles</td>
-                        <td>16:00</td>
-                        <td>20</td>
-                        <td>10</td>
-                    </tr>
+                    </c:forEach>
                 </tbody>
             </table>
         </main>
