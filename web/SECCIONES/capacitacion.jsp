@@ -62,9 +62,9 @@
                         <label for="cantAsistentes">Cantidad de Asistentes:</label>
                     </div>
     
-                   
-                    <input type="submit" value="Crear Capacitación" class="btn btn-primary">
-                      
+                    <div>
+                    <input type="submit" value="Crear Capacitación" onclick="location.href='SECCIONES/registroExitoso.jsp'"; class="btn btn-primary">
+                    </div>
                 </form>
         </main>
 

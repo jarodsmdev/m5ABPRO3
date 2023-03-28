@@ -40,7 +40,8 @@
                 </div>
 
                 <div>
-                    <input type="submit" value="Enviar" class="btn btn-primary px-3">
+                    <input type="submit" onclick="location.href='SECCIONES/registroExitoso.jsp'"; value="Enviar" btn-primary px-3">
+                    
                 </div>
 
             </form>
