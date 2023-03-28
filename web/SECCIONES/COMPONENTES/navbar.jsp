@@ -15,16 +15,16 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-                <a class="nav-link ${pageContext.request.requestURI.endsWith('/') ? 'active' : ''}" aria-current="page" href="${pageContext.request.contextPath}/SvInicio">Inicio</a>
+                <a class="nav-link ${pageContext.request.requestURI.endsWith('/SvInicio') ? 'active' : ''}" aria-current="page" href="${pageContext.request.contextPath}/SvInicio">Inicio</a>
           </li>
           <li class="nav-item">
-                <a class="nav-link" href="${pageContext.request.contextPath}/SvContacto">Contacto</a>
+                <a class="nav-link ${pageContext.request.requestURI.endsWith('/SvContacto') ? 'active' : ''}" href="${pageContext.request.contextPath}/SvContacto">Contacto</a>
           </li>
           <li class="nav-item">
-                <a class="nav-link" href="${pageContext.request.contextPath}/SvCapacitacion">Capacitación</a>
+                <a class="nav-link ${pageContext.request.requestURI.endsWith('/SvCapacitacion') ? 'active' : ''}" href="${pageContext.request.contextPath}/SvCapacitacion">Capacitación</a>
           </li>
           <li class="nav-item">
-                <a class="nav-link" href="${pageContext.request.contextPath}/SvListarCapacitacion">Lista de Capacitaciones</a>
+                <a class="nav-link ${pageContext.request.requestURI.endsWith('/SvListarCapacitacion') ? 'active' : ''}" href="${pageContext.request.contextPath}/SvListarCapacitacion">Lista de Capacitaciones</a>
           </li>
           
           <% if(request.getSession().getAttribute("nombre") != null){ %>
